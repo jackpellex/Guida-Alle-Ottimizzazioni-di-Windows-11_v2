@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<WindowsRE>
+    <WifiCredential>
+        <Wifi ssid="NomeDelTuoWiFi" password="PasswordDelTuoWiFi" />
+    </WifiCredential>
+    <CloudRemediation state="1" />
+    <AutoRemediation state="1" totalwaittime="120" waitinterval="2"/>
+</WindowsRE>

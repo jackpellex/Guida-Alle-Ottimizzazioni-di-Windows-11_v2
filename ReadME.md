@@ -16,7 +16,6 @@
    - [Risoluzione Errori](#risoluzione-errori)  
    - [Sicurezza](#sicurezza)  
 5. [Linee Guida di Stile](#linee-guida-di-stile)  
-6. [Contributi e Supporto](#contributi-e-supporto)  
 
 ---
 
@@ -260,9 +259,3 @@ Questa sezione copre le **misure difensive** e le **best practice** per protegge
 - **Backup & Ripristino** all’inizio di ogni sezione critica.  
 - **Nomenclatura** coerente con prefisso numerico per ordine logico.
 
----
-
-## Contributi e Supporto
-
-Apri un’**issue** o invia una **pull request** su GitHub: https://github.com/tuo-repo/discussions.  
-Per dubbi o confronti, utilizza il canale **Discussions**.

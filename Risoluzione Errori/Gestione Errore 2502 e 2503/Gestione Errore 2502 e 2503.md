@@ -8,44 +8,44 @@ Questa guida descrive i passaggi per risolvere gli errori 2502 e 2503 in modo ch
 
 -----
 
+Assolutamente, hai ragione. Dare i permessi minimi necessari è sempre la prassi migliore per la sicurezza.
+
+Ecco la sezione modificata, con le autorizzazioni specifiche per il gruppo "Users" come richiesto, mantenendo intatto il resto del testo.
+
+---
+
 ## 🛠 La Soluzione Definitiva: Correggere i Permessi alla Radice
 
 La causa più comune e la soluzione più efficace per gli errori 2502/2503 risiede spesso in permessi insufficienti per i processi di sistema e utente che accedono alle **cartelle temporanee di Windows**. Questo accade perché Windows Installer ha bisogno di scrivere e leggere file in queste posizioni per operare correttamente.
 
-**L'esperienza diretta ha dimostrato che la chiave per risolvere questi errori su Windows 11 è assicurarsi che i gruppi `TrustedInstaller` e `Users`, oltre a `SYSTEM` e `Administrators`, abbiano il "Controllo completo" su entrambe le cartelle temporanee del sistema.**
+L'esperienza diretta ha dimostrato che la chiave per risolvere questi errori su Windows 11 è assicurarsi che i gruppi `TrustedInstaller` e `Users`, oltre a `SYSTEM` e `Administrators`, abbiano i permessi adeguati su entrambe le cartelle temporanee del sistema.
 
 **Ecco come ripristinare i permessi corretti:**
 
 1.  **Individua le Cartelle Temporanee:**
-
-      * Premi `Win + R` per aprire "Esegui".
-      * Digita `%TEMP%` e premi `Invio`. Si aprirà la cartella temporanea del tuo profilo utente (es. `C:\Users\<IlTuoNomeUtente>\AppData\Local\Temp`).
-      * Ripeti l'operazione, digitando questa volta `%WINDIR%\Temp` e premi `Invio`. Si aprirà la cartella temporanea di sistema (es. `C:\Windows\Temp`).
+    * Premi `Win + R` per aprire "Esegui".
+    * Digita `%TEMP%` e premi `Invio`. Si aprirà la cartella temporanea del tuo profilo utente (es. `C:\Users\<IlTuoNomeUtente>\AppData\Local\Temp`).
+    * Ripeti l'operazione, digitando questa volta `%WINDIR%\Temp` e premi `Invio`. Si aprirà la cartella temporanea di sistema (es. `C:\Windows\Temp`).
 
 2.  **Modifica i Permessi di Sicurezza (per *entrambe* le cartelle):**
+    * Fai clic destro su uno spazio vuoto all'interno della cartella (non su un file o una sottocartella) e seleziona **Proprietà**.
+    * Vai alla scheda **Sicurezza**.
+    * Clicca sul pulsante **Modifica...** per cambiare i permessi.
 
-      * Fai clic destro su uno spazio vuoto all'interno della cartella (non su un file o una sottocartella) e seleziona **Proprietà**.
-      * Vai alla scheda **Sicurezza**.
-      * Clicca sul pulsante **Modifica...** per cambiare i permessi.
-
-3.  **Configura il "Controllo Completo" per i Gruppi Essenziali:**
-
-      * Nella finestra "Autorizzazioni per [Nome Cartella]", assicurati che i seguenti utenti/gruppi siano presenti e abbiano la casella **"Controllo completo"** spuntata sotto la colonna "Consenti":
-          * **`SYSTEM`**: Fondamentale per i servizi di sistema.
-          * **`Administrators`** (o "Amministratori"): Per gli utenti con privilegi amministrativi.
-          * **`Users`** (o "Utenti") o il tuo **nome utente specifico**: **Questo è cruciale.** Molte parti dei processi di installazione possono operare sotto questo contesto e richiedono pieni permessi di lettura/scrittura.
-          * **`TrustedInstaller`**: **Altrettanto cruciale.** `TrustedInstaller` è il proprietario di molti file di sistema ed è indispensabile per le operazioni di installazione/disinstallazione che modificano il sistema.
-      * **Se un gruppo non è presente:** Clicca su "Aggiungi...", digita il nome del gruppo (es. `TrustedInstaller`, `Users`, `SYSTEM`), clicca "Controlla nomi" e poi "OK". Una volta aggiunto, selezionalo e spunta "Controllo completo".
-      * Assicurati che "Controllo completo" sia spuntato per tutti i gruppi sopra menzionati.
-      * Clicca **Applica** e poi **OK** su tutte le finestre di dialogo aperte.
-      * **Ripeti tutti questi passaggi per l'altra cartella temporanea (`%WINDIR%\Temp`).**
+3.  **Configura i Permessi per i Gruppi Essenziali:**
+    * Nella finestra "Autorizzazioni per [Nome Cartella]", assicurati che i seguenti utenti/gruppi siano presenti e abbiano le caselle spuntate sotto la colonna "Consenti" come indicato:
+        * **`SYSTEM`**: Spunta **"Controllo completo"**. Fondamentale per i servizi di sistema.
+        * **`Administrators`** (o "Amministratori"): Spunta **"Controllo completo"**. Per gli utenti con privilegi amministrativi.
+        * **`Users`** (o "Utenti") o il tuo **nome utente specifico**: **Questo è cruciale.** Spunta **"Lettura ed esecuzione"**, **"Visualizzazione contenuto cartella"**, **"Scrittura"** e **"Modifica"**. Molte parti dei processi di installazione possono operare sotto questo contesto e richiedono questi specifici permessi di lettura/scrittura/modifica.
+        * **`TrustedInstaller`**: Spunta **"Controllo completo"**. **Altrettanto cruciale.** `TrustedInstaller` è il proprietario di molti file di sistema ed è indispensabile per le operazioni di installazione/disinstallazione che modificano il sistema.
+    * **Se un gruppo non è presente:** Clicca su "Aggiungi...", digita il nome del gruppo (es. `TrustedInstaller`, `Users`, `SYSTEM`), clicca "Controlla nomi" e poi "OK". Una volta aggiunto, selezionalo e spunta le autorizzazioni indicate sopra per il rispettivo gruppo.
+    * Clicca **Applica** e poi **OK** su tutte le finestre di dialogo aperte.
+    * **Ripeti tutti questi passaggi per l'altra cartella temporanea (`%WINDIR%\Temp`).**
 
 4.  **Riavvia il Computer:**
-
-      * È essenziale riavviare il PC per assicurarsi che tutte le modifiche ai permessi siano applicate correttamente e che i servizi vengano riavviati con le nuove configurazioni di sicurezza.
+    * È essenziale riavviare il PC per assicurarsi che tutte le modifiche ai permessi siano applicate correttamente e che i servizi vengano riavviati con le nuove configurazioni di sicurezza.
 
 Dopo aver eseguito questi passaggi, riprova l'installazione o disinstallazione che in precedenza ti dava errore. Nella maggior parte dei casi, questo risolverà definitivamente il problema degli errori 2502 e 2503.
-
 -----
 
 ## Soluzioni Rapide e Workaround (nel caso la soluzione principale non bastasse)

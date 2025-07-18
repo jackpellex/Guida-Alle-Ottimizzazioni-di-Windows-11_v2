@@ -86,7 +86,7 @@ Perfetta sia per chi vuole migliorare in modo stabile, sia per sperimentatori pr
   - Usa il **Sensore di memoria** in Sicurezza di Windows.
   - Disattiva raccolta Telemetria superflua e colori non essenziali.
 - **Opzioni Prestazioni**:
-  - Configura Memoria Virtuale manualmente: dimensione iniziale e massima = 1.5× RAM.
+  - Configura Memoria Virtuale manualmente: dimensione iniziale e massima tra 1.5× RAM e 3.0x RAM. Assicurati di riservare abbastanza spazio libero sul disco (almeno 1,5x - 3x della RAM disponibile)
   - Ottimizza effetti visivi su **Prestazioni migliori**.
 - **Programmi da Disinstallare**:
   - Rimuovi app preinstallate non necessarie dal Pannello di controllo.

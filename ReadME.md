@@ -44,12 +44,26 @@ Perfetta sia per chi vuole migliorare in modo stabile, sia per sperimentatori pr
 > Le cartelle **1–4** sono il cuore dell’ottimizzazione: esplorale con ordine e attenzione.
 
 ---
-
 ## Prestazioni Realistiche vs. Extreme Tuning
 
-- **Tuning Sicuro:** +8% FPS medio, maggiore fluidità e latenza ridotta.  
-- **Tuning Estremo (Sconsigliato):** fino a +30–40% FPS, con **rischio di crash**, artefatti video e instabilità di sistema.  
+Quando si parla di ottimizzazione delle prestazioni grafiche (tuning), è fondamentale distinguere tra un approccio sicuro e uno più estremo, soprattutto in base all'hardware del proprio sistema.
+
+### Sistemi Moderni
+
+Per i sistemi più recenti, equipaggiati con hardware performante, le aspettative di miglioramento dovrebbero essere realistiche e mirate alla stabilità:
+
+* **Tuning Sicuro:** Questo tipo di ottimizzazione punta a un aumento medio delle prestazioni di circa **+8% di FPS**, garantendo al contempo una maggiore fluidità di gioco e una riduzione della latenza. Si concentra su piccole modifiche che migliorano l'esperienza senza compromettere la stabilità del sistema.
+* **Tuning Estremo (Sconsigliato):** Spingersi oltre con un tuning aggressivo può portare a un incremento degli FPS **fino al +30-40%**. Tuttavia, questo approccio è altamente **sconsigliato** a causa dell'elevato **rischio di crash**, l'insorgere di artefatti video e una generale instabilità del sistema. I benefici percepiti non giustificano i potenziali problemi.
+
+### Sistemi Meno Recenti
+
+Per i sistemi più datati, l'ottimizzazione può offrire margini di miglioramento potenzialmente più significativi, dato che il software è spesso più limitato dall'hardware obsoleto:
+
+* **Tuning Sicuro:** Anche su hardware più vecchio, un tuning sicuro può portare a benefici interessanti. L'aumento medio degli FPS potrebbe essere **superiore al +8%** visto sui sistemi moderni, contribuendo a rendere i giochi più giocabili e reattivi, pur mantenendo un'ottima stabilità.
+* **Tuning Estremo (Sconsigliato):** Similmente ai sistemi moderni, anche sui PC meno recenti il tuning estremo può promettere incrementi di FPS **fino al +30-40% o anche di più**. Tuttavia, i rischi di **instabilità, crash frequenti e artefatti visivi** sono ancora più elevati su hardware meno tollerante. La stabilità del sistema ne risentirebbe gravemente, compromettendo l'usabilità generale.
+
 > ⚠️ Ogni modifica estrema è segnalata da un avviso e va testata su singola macchina.
+
 
 ---
 

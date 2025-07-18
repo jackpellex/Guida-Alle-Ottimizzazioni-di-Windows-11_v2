@@ -93,6 +93,7 @@ Per i sistemi più datati, l'ottimizzazione può offrire margini di migliorament
 - **GPU Tweaks**:
   - Regola consumi e power limit via tool del vendor (NVIDIA/AMD).
   - Abilita riduzione latenza input nei driver.
+  - Comprendi e scegli tra Fullscreen Esclusivo e Finestra Borderless per ottimizzare ulteriormente le performance e la latenza.
 - **HPET** (⚠️ sconsigliato):
   - `bcdedit /set useplatformclock true/false`, testare per possibili miglioramenti di stabilità.
 - **Impostazioni di Sistema**:

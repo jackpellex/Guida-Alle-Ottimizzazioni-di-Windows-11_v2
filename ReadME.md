@@ -75,6 +75,7 @@ Perfetta sia per chi vuole migliorare in modo stabile, sia per sperimentatori pr
   - Usa **Process Explorer** per analisi avanzata.
 - **Gestione Disco**:
   - Deframmentazione SSD disabilitata, esegui TRIM: `Optimize-Volume -DriveLetter C -ReTrim -Verbose`.
+  - Indicizzazione file: Mantiene un indice per ricerche rapide. Benefico per la velocità di ricerca su desktop moderni (SSD). Configura le "Opzioni di indicizzazione" per includere/escludere specifiche cartelle.
 - **GPU Tweaks**:
   - Regola consumi e power limit via tool del vendor (NVIDIA/AMD).
   - Abilita riduzione latenza input nei driver.

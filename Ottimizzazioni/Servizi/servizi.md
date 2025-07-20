@@ -35,6 +35,7 @@ OpenSSH Authentication Agent   # Agente autenticazione SSH
 DialogBlockingService          # Gestione dialoghi interattivi
 Adobe Acrobat Update Service   # Aggiornamento automatico di Adobe Acrobat
 Windows Biometric Service      # Supporto per sensori biometrici
+WSearch                        # Indicizzazione di contenuto nelle cartelle "Esplora File"
 
 
 ## **Servizi da Impostare su Manuale**

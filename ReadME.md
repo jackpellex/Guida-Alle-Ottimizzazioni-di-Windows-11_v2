@@ -118,18 +118,20 @@ Per i sistemi più datati, l'ottimizzazione può offrire margini di migliorament
   - Mantieni attivo **Windows Update**, **Security Center** e **Driver Frameworks**.
 
 ### Personalizzazione 🎨
+- **Installazione Personalizzata e Automatizzata (CleanOS)**:
+  - Vuoi un'installazione di Windows 10/11 su misura, senza bloatware e con le tue configurazioni predefinite? Segui la guida **CleanOS.md** nella cartella **2_Personalizzazione/** per creare un supporto di installazione automatico e pulito usando l'Unattend Generator. Questo ti permette di definire lingua, regione, account utente, impostazioni di rete e privacy fin dal primo avvio del sistema.
 - **Desktop Pulito**:
-  - Mantieni il desktop il più sgombro possibile: sposta Documenti, Download e collegamenti in cartelle dedicate (`C:\Users\%USERNAME%\Documenti`, ecc.).  
-  - Organizza i file con struttura gerarchica e usa **cartelle dei Preferiti** nel File Explorer.  
-  - Riduci il caricamento di file all’avvio: rimuovi shortcut superflui dalla cartella `Startup` (`shell:startup`).
+  - Mantieni il desktop il più sgombro possibile: sposta Documenti, Download e collegamenti in cartelle dedicate (`C:\Users\%USERNAME%\Documenti`, ecc.).  
+  - Organizza i file con struttura gerarchica e usa **cartelle dei Preferiti** nel File Explorer.  
+  - Riduci il caricamento di file all’avvio: rimuovi shortcut superflui dalla cartella `Startup` (`shell:startup`).
 - **Mouse Migliorato**:
-  - **DPI**: configura DPI e Polling Rate dal software del driver (Logitech G HUB, Razer Synapse, ecc.) per trovare il giusto compromesso tra precisione e velocità.
-  - **Disabilitazione accelerazione**: apri **Pannello di controllo → Mouse → Opzioni puntatore** e deseleziona **Migliora precisione puntatore**.
-  - **Modifiche al Registro** (⚠️)
+  - **DPI**: configura DPI e Polling Rate dal software del driver (Logitech G HUB, Razer Synapse, ecc.) per trovare il giusto compromesso tra precisione e velocità.
+  - **Disabilitazione accelerazione**: apri **Pannello di controllo → Mouse → Opzioni puntatore** e deseleziona **Migliora precisione puntatore**.
+  - **Modifiche al Registro** (⚠️)
 - **Aggiustamenti dello Schermo**:
-  - **Refresh Rate**: vai in **Impostazioni → Sistema → Schermo → Impostazioni schermo avanzate** e seleziona il massimo refresh supportato.
-  - **Calibrazione Colori**: esegui **Calibra colori dello schermo** da **Pannello di controllo → Schermo** per regolare gamma, luminosità e contrasto.
-  - **Scaling DPI**: in **Impostazioni → Sistema → Schermo**, regola lo **scaling** su percentuali personalizzate per evitare sfasamenti grafici su display ad alta risoluzione.
+  - **Refresh Rate**: vai in **Impostazioni → Sistema → Schermo → Impostazioni schermo avanzate** e seleziona il massimo refresh supportato.
+  - **Calibrazione Colori**: esegui **Calibra colori dello schermo** da **Pannello di controllo → Schermo** per regolare gamma, luminosità e contrasto.
+  - **Scaling DPI**: in **Impostazioni → Sistema → Schermo**, regola lo **scaling** su percentuali personalizzate per evitare sfasamenti grafici su display ad alta risoluzione.
 
 ### Risoluzione Errori 🛠️
 

@@ -65,7 +65,7 @@ Get-FileHash "Windows11_22H2_Italian_x64v1.iso" -Algorithm SHA256
 
 ### Accesso al Generatore Avanzato
 
-**🌐 URL Ufficiale**: [https://schneegans.de/windows/unattend-generator/](https://schneegans.de/windows/unattend-generator/)
+**🌐 URL Ufficiale**: [https://schneegans.de/windows/unattend-generator/]
 
 L'Unattend Generator di Schneegans è riconosciuto dalla community tecnica Microsoft e offre oltre **300 opzioni di personalizzazione** avanzate.
 
@@ -142,6 +142,15 @@ Oltre **70 componenti** rimovibili:
 3. **Download file XML** - Salvataggio `autounattend.xml` 
 4. **Backup configurazione** - Possibile esportazione preset
 
+**Risorse della Comunità e Progetti Pre-configurati:**
+
+Se preferisci non creare il file manualmente o desideri una base di partenza, puoi esplorare le seguenti risorse della comunità. Sono state verificate e possono semplificare il processo:
+
+* **Progetto GitHub UnattendedWinstall**: [https://github.com/memstechtips/UnattendedWinstall](https://github.com/memstechtips/UnattendedWinstall)
+* **Guida Tutorial di MemsTechTips**: [https://memstechtips.com/customize-windows-installs-unattendedwinstall/](https://memstechtips.com/customize-windows-installs-unattendedwinstall/)
+
+Questi collegamenti offrono soluzioni e guide già predisposte dalla comunità. Nel caso in cui volessi verificarne l'affidabilità, puoi scaricare il file dal progetto GitHub e sottoporlo a una scansione con [VirusTotal](https://www.virustotal.com/gui/home/upload).
+
 ---
 
 ## 💾 **Step 3: Creazione Supporto Installazione Professionale**
@@ -202,39 +211,56 @@ Oltre **70 componenti** rimovibili:
   - Dell: F12
   - Lenovo: F12/Enter→F12
 
-### Fasi Installazione Automatica
+Assolutamente sì, hai colto nel segno! È **perfetto** specificare che i terminali o le finestre PowerShell appaiono brevemente durante il processo. Questo è un dettaglio importante che rassicura l'utente e chiarisce che il processo sta funzionando come previsto, piuttosto che essere un errore.
 
-**1. WindowsPE Phase** (2-5 minuti)
-- Caricamento Windows PE
-- Rilevamento `autounattend.xml`
-- Bypass requisiti hardware (se configurato)
-- Configurazione partizionamento
+Ecco come potremmo integrare questa informazione, aggiungendola all'inizio per dare subito un contesto importante:
 
-**2. OfflineServicing Phase** (10-20 minuti)
-- Copia file sistema
-- Rimozione bloatware
-- Integrazione driver
-- Applicazione tweaks registro
+---
 
-**3. Specialize Phase** (5-10 minuti)
-- Configurazione hardware specifica
-- Applicazione personalizzazioni
-- Configurazione servizi
-- Setup sicurezza
+## 🚀 Fasi dell'Installazione Automatica di Windows
 
-**4. OOBE Phase** (2-5 minuti)  
-- Creazione account utenti
-- Finalizzazione configurazioni
-- Primo accesso automatico
-- Esecuzione script finali
+Durante il processo di installazione automatica, è **normale che compaiano brevemente finestre del terminale o di PowerShell**. Questi "flash" indicano l'esecuzione di script e comandi che accelerano e personalizzano il setup, e non sono affatto un segnale di errore.
 
-### Monitoraggio Processo
+---
+### **1. WindowsPE Phase** (2-5 minuti)
+Questa è la fase iniziale, in cui il sistema si prepara per l'installazione vera e propria:
+* Caricamento dell'ambiente **Windows PE**.
+* Rilevamento e lettura del file **`autounattend.xml`**.
+* **Bypass dei requisiti hardware** (se configurato, per installazioni su hardware legacy).
+* Configurazione del **partizionamento del disco**.
 
-**Indicatori Progressione:**
-- Finestre PowerShell rapide (script execution)
-- Progress bar Windows Setup
-- Riavvi automatici multipli
-- Nessuna richiesta input utente
+---
+### **2. OfflineServicing Phase** (10-20 minuti)
+In questa fase avvengono le modifiche principali al sistema operativo prima ancora che sia avviato:
+* Copia dei **file di sistema** sul disco.
+* **Rimozione del bloatware** (software preinstallato non desiderato).
+* **Integrazione dei driver** necessari.
+* Applicazione dei **tweaks al registro** di sistema per ottimizzazioni e personalizzazioni.
+
+---
+### **3. Specialize Phase** (5-10 minuti)
+Questa fase personalizza l'installazione in base all'hardware specifico del computer:
+* Configurazione dell'**hardware specifico** del sistema.
+* Applicazione di **personalizzazioni** finali.
+* Configurazione dei **servizi** di Windows.
+* Setup delle impostazioni di **sicurezza**.
+
+---
+### **4. OOBE Phase** (2-5 minuti)
+L'ultima fase prima del primo avvio completo del sistema:
+* **Creazione degli account utenti** configurati.
+* Finalizzazione delle **configurazioni** di sistema.
+* **Primo accesso automatico** dell'utente (se impostato).
+* Esecuzione degli **script finali** personalizzati.
+
+---
+## 📈 Monitoraggio del Processo
+
+Per capire se l'installazione automatica sta procedendo correttamente, presta attenzione a questi **indicatori di progressione**:
+* **Finestre PowerShell rapide**: Brevi apparizioni di terminali indicano l'esecuzione degli script.
+* **Progress bar di Windows Setup**: La barra di avanzamento del setup di Windows si muove costantemente.
+* **Riavvi automatici multipli**: Il sistema si riavvierà più volte senza richiedere input.
+* **Nessuna richiesta di input utente**: L'installazione procede autonomamente, senza blocchi che richiedano la tua interazione.
 
 ---
 

@@ -3,6 +3,14 @@
 > 🎮 **Ottimizza Windows 11 per il gaming e l’uso quotidiano** 🔧  
 > Progettata per **utenti esperti e non**, questa guida ti mostra percorsi **sicuri e avanzati** per massimizzare le prestazioni software e hardware del tuo PC.
 
+## CleanOS: Personalizza la Tua Installazione di Windows 11 per una Base Stabile
+
+Prima di immergerti nelle ottimizzazioni, puoi gettare le fondamenta per un sistema pulito e performante. Questa guida include una sezione dedicata a **CleanOS**, che ti permette di creare un'installazione personalizzata di Windows 10/11 fin dall'inizio.
+
+Questo significa che potrai avere un'immagine ISO su misura, **priva di bloatware** (software preinstallato non necessario) e già configurata con le tue preferenze di lingua, regione, account utente, impostazioni di rete e privacy.
+
+Utilizzando l'**Unattend Generator** e seguendo il percorso indicato in `2_Personalizzazione/CleanOS.md`, ti assicurerai che il tuo sistema parta già da una **base stabile e ottimizzata**, priva di elementi superflui che potrebbero influire sulle prestazioni future.
+
 ---
 
 ## 📑 Indice

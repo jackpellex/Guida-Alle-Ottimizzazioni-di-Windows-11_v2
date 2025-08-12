@@ -81,7 +81,3 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multime
 ## Conclusione
 
 La regolazione di `NetworkThrottlingIndex` e `SystemResponsiveness` consente un controllo fine sulla gestione delle risorse di rete e CPU di Windows. Sperimenta i valori suggeriti in base allo scenario d'uso per trovare la configurazione ottimale per il tuo sistema.
-
----
-
-**Nota:** Questa guida è destinata a utenti avanzati. Non mi assumo responsabilità per eventuali danni o malfunzionamenti causati dalle modifiche al registro di sistema.

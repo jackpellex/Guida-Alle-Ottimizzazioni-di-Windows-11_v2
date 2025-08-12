@@ -119,7 +119,7 @@ Per i sistemi più datati, l'ottimizzazione può offrire margini di migliorament
   - Abilita **Fast Startup**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power` → `HiberbootEnabled = 1`.
   - Disabilita GameDVR: `HKEY_CURRENT_USER\System\GameConfigStore` → `GameDVR_Enabled = 0`.
   - Imposta `SvcHostSplitThresholdInKB` e `Win32PrioritySeparation` per bilanciare avvio servizi e priorità.
-  - * Ottimizza la priorità per i giochi: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games` → imposta `GPU Priority = 8`, `Priority = 6` e `Scheduling Category = High` per migliorare FPS e reattività.
+  - Ottimizza la priorità per i giochi: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games` → imposta `GPU Priority = 8`, `Priority = 6` e `Scheduling Category = High` per migliorare FPS e reattività.
 - **Resource Monitor**:
   - Monitora I/O, CPU, RAM e rete in tempo reale per individuare colli di bottiglia.
 - **Servizi Windows**:

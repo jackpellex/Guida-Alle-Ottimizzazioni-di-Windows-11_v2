@@ -108,6 +108,9 @@ Per i sistemi più datati, l'ottimizzazione può offrire margini di migliorament
   - Disabilita app in background.
   - Usa il **Sensore di memoria** in Sicurezza di Windows.
   - Disattiva raccolta Telemetria superflua e colori non essenziali.
+- **Ottimizzazione RAMDisk** (OPZIONALE): 
+  - Consiste nel creare un disco virtuale nella RAM, eliminando virtualmente gli stuttering e migliorando drasticamente gli FPS. 
+  - Può portare a un aumento massiccio degli FPS, ma solo con configurazioni hardware specifiche (principalmente 64GB di RAM o superiore).
 - **Opzioni Prestazioni**:
   - Configura Memoria Virtuale manualmente: dimensione iniziale e massima tra 1.5× RAM e 3.0x RAM. Assicurati di riservare abbastanza spazio libero sul disco (almeno 1,5x - 3x della RAM disponibile)
   - Ottimizza effetti visivi su **Prestazioni migliori**.

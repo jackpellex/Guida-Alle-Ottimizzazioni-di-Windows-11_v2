@@ -333,6 +333,12 @@ pause
 - Pro: Ottime performance, stabile
 - Contro: Costo licenza (~30€)
 
+#### 4. **Dimmdrive - Gaming Ramdrive** (Commerciale)
+
+  - Pro: Specificamente progettato per i giochi Steam, integrazione diretta con Steam.
+  - Contro: Software a pagamento.
+  - Link: [Dimmdrive - Gaming Ramdrive](https://store.steampowered.com/app/337070/Dimmdrive__Gaming_Ramdrive__10000_MBs/)
+
 ### Approcci Ibridi
 
 #### Intel Optane/AMD StoreMI

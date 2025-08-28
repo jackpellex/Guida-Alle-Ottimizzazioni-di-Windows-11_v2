@@ -1,6 +1,8 @@
 ## **Guida a Robocopy (Robust File Copy)**
 
-Robocopy, abbreviazione di **Robust File Copy**, è un'utility da riga di comando integrata in Windows che offre una copia di file e directory molto più potente e affidabile rispetto al tradizionale "copia e incolla". È particolarmente utile per operazioni complesse come backup, sincronizzazione e migrazione di grandi volumi di dati, specialmente su reti.
+Robocopy (Robust File Copy) è un'utility da riga di comando di Windows estremamente pratica ed efficace per la gestione di file e directory. La sua robustezza la rende ideale per operazioni complesse come il **backup**, la **sincronizzazione** e la **migrazione dati**. A differenza dei metodi di copia tradizionali, Robocopy è in grado di eseguire backup in modo intelligente, verificando quali file sono stati modificati per copiarli in maniera incrementale. Questo significa che, in caso di un'interruzione (ad esempio, per un'improvvisa mancanza di corrente) o di un backup parziale già esistente, può riprendere l'operazione concentrandosi solo sui file nuovi, modificati o corrotti, risparmiando tempo e risorse.
+
+Di default, Robocopy processa un file alla volta, ma è possibile sfruttare il multithreading per copiare più file in parallelo con il parametro `/MT[:n]`. Questo è particolarmente utile quando si ha a che fare con un numero elevato di file di piccole dimensioni, dove il tempo di avvio per ogni singolo file può incidere sull'efficienza. Per file di grandi dimensioni, invece, l'impostazione di default è più che sufficiente, dato che il tempo di trasferimento prevale sui tempi di gestione dei thread.
 
 -----
 

@@ -127,6 +127,8 @@ Questo approccio aggressivo mira a massimizzare gli FPS, con guadagni potenziali
 - **Servizi Windows**:
   - Disattiva servizi non essenziali (Fax, Print Spooler se non usati).
   - Mantieni attivo **Windows Update**, **Security Center** e **Driver Frameworks**.
+- **Qualità e Volume Audio**:
+  - Migliora la fedeltà del suono e il volume generale configurando le opzioni avanzate del dispositivo audio nel **Pannello di controllo**.
 
 ### Personalizzazione 🎨
 - **Installazione Personalizzata e Automatizzata (CleanOS)**:

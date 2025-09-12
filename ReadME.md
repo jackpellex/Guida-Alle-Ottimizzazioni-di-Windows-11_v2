@@ -231,6 +231,13 @@ Questa sezione copre le **misure difensive** e le **best practice** per protegge
 - Windows Analizza immagini localmente con AI e salva risultati in un DB SQLite non crittografato nella cartella utente.
 - Disabilita in **Impostazioni → Privacy & sicurezza → AI e servizi multimediali → Recall**.
 
+#### 📁 Disinstallare OneDrive
+- Prevenzione: OneDrive è attivo di default e può caricare automaticamente i tuoi dati su cloud, consumando risorse e sollevando dubbi sulla sicurezza.
+- **Procedura:**
+  1. Apri **Aggiungi o rimuovi programmi**.
+  2. Cerca **Microsoft OneDrive**.
+  3. Clicca sui tre puntini (...) a destra e seleziona **Disinstalla**.
+
 #### 🔄 Creazione Punto di Ripristino
 > **PRIMA DI TUTTO**, crea sempre un punto di ripristino:  
 1. Apri **Pannello di controllo → Sistema → Protezione sistema**.  

@@ -29,12 +29,13 @@ Utilizzando l'**Unattend Generator** e seguendo il percorso indicato in `2_Perso
 
 ## Scopo della Guida
 
-Questa guida ti accompagnerà passo dopo passo nell’**ottimizzazione di Windows 11** con un focus sul **gaming** e sul **massimo rendimento** del sistema:
+L'obiettivo della guida di ottimizzazione per Windows 11 di jackpellex è molto chiaro e si basa su tre pilastri fondamentali:
 
-- Percorsi **sicuri**: modifiche consigliate per un +8% medio di FPS e minore latenza input.  
-- **Extreme tuning**: opzioni **sconsigliate** per un potenziale +30–40% FPS, evidenziate con avvertenze chiare (rischio di instabilità variabile a seconda della configurazione).
+1.  **Migliorare l'esperienza utente:** Rendere l'uso quotidiano del sistema operativo più piacevole e fluido.
+2.  **Alleggerire il sistema:** Eliminare o disattivare processi, servizi e funzionalità non necessari o poco utilizzati, noti anche come "bloatware" o componenti superflue, per liberare risorse di sistema (RAM, CPU, spazio su disco).
+3.  **Ottimizzazione personalizzata:** Dare all'utente la possibilità di scegliere quali modifiche applicare, permettendo un approccio modulare e consapevole in base alle proprie esigenze e al proprio livello di esperienza.
 
-Perfetta sia per chi vuole migliorare in modo stabile, sia per sperimentatori pronti a correre qualche rischio.
+L'obiettivo finale è quello di ottenere un **Sistema Operativo leggero, veloce e sicuro**, con un'importante sottolineatura sulla necessità di essere **coscienti della sicurezza** durante l'applicazione delle ottimizzazioni.
 
 ---
 

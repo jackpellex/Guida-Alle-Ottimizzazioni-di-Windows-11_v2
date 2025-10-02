@@ -153,6 +153,26 @@ Questi collegamenti offrono soluzioni e guide già predisposte dalla comunità. 
 
 ---
 
+### ⚙️ **Step 2.2 - Integrazione e Creazione dell'Immagine ISO Personalizzata**
+
+Questa fase è cruciale per "iniettare" il file di risposta **`autounattend.xml`** nell'immagine di installazione di Windows, rendendola completamente automatica.
+
+#### **Procedura di Integrazione Certificata:**
+
+1.  **Estrazione del Contenuto ISO:**
+    * Scaricare l'**Immagine ISO ufficiale** di Windows dal sito Microsoft.
+    * Utilizzare un software di compressione professionale (come **7-Zip** o **WinRAR**) per estrarre l'intero contenuto dell'ISO in una nuova cartella dedicata.
+
+2.  **Iniezione del File `autounattend.xml`:**
+    * Copiare il file **`autounattend.xml`** generato nello Step 2.1.
+    * Incollarlo direttamente nella **cartella *root*** che contiene il contenuto estratto dell'ISO (nello stesso livello dei file `setup.exe` e `sources`). Questa è la posizione standard di ricerca per Windows Setup.
+
+3.  **Ricreazione dell'Immagine ISO:**
+    * Utilizzare un software di masterizzazione o un editor ISO come **AnyBurn** (raccomandato nel Metodo B dello Step 3) o **OSCDIMG** (strumento ufficiale del Windows ADK per ambienti enterprise) per ricreare un singolo file immagine ISO avviabile partendo dal contenuto della cartella modificata.
+    * **Risultato:** Si ottiene un'**Immagine ISO di Deployment** completamente personalizzata e pronta per essere utilizzata per installazioni automatizzate.
+
+---
+
 ## 💾 **Step 3: Creazione Supporto Installazione Professionale**
 
 ### Metodo A: USB Bootable con Rufus (Raccomandato)

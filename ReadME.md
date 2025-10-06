@@ -86,6 +86,7 @@ Questo approccio aggressivo mira a massimizzare gli FPS, con guadagni potenziali
   - **Compressione della memoria**: `Enable-MMAgent -MemoryCompression`.
   - **Sleep States**: disabilita stati di basso consumo (S1–S3) in sistemi desktop per ridurre lag.
   - **Robocopy**: un'utility da riga di comando integrata di default su Windows, per copiare file e directory in modo robusto, usata per backup, sincronizzazione e migrazione dati.
+  - **Diskpart** (⚠️ **strumento avanzato:** Se usata impropriamente, può causare la **perdita di dati in maniera irreversibile**, rendendone molto difficile il recupero. È tuttavia indispensabile per risolvere problemi complessi a "basso livello" di dischi e partizioni, superando i limiti degli strumenti grafici.): un'utility da riga di comando per il controllo avanzato di dischi e partizioni, essenziale per formattare, creare, eliminare e gestire volumi in modo granulare.
 - **Configurazione di Sistema**:
   - Rilevamento e affinità core avanzata via `bcdedit /set {current} numproc N`.
 - **Ottimizzazione Connessione e Rete**:

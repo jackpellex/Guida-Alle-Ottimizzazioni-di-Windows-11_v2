@@ -151,6 +151,44 @@ Se preferisci non creare il file manualmente o desideri una base di partenza, pu
 
 Questi collegamenti offrono soluzioni e guide già predisposte dalla comunità. Nel caso in cui volessi verificarne l'affidabilità, puoi scaricare il file dal progetto GitHub e sottoporlo a una scansione con [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
+-----
+## ⚠️ Errore di Aggiornamento: "Impossibile aggiornare la partizione riservata del sistema" (0xc1900201)
+
+Questo errore si manifesta in modo ricorrente per gli utenti che hanno installato Windows 10/11 utilizzando un file `autounattend.xml` o uno script DISKPART che definiva la Partizione di Sistema EFI (ESP) con la **dimensione minima storica di 100 MB**.
+
+### Causa del Problema
+
+La Partizione di Sistema EFI (ESP) da 100 MB non fornisce spazio sufficiente per ospitare i file temporanei e le modifiche che gli aggiornamenti importanti di Windows 11 (come la versione 24H2) devono apportare. Windows 11 necessita di circa **50-75 MB di spazio libero** sulla partizione EFI per completare il processo di aggiornamento. Una partizione da 100 MB, con i file di boot esistenti, è troppo "piena" e l'aggiornamento viene interrotto, restituendo l'errore `0xc1900201`.
+
+### Soluzione Definitiva: Aumentare la Dimensione Minima della Partizione EFI
+
+Per prevenire questo errore in tutte le future installazioni basate su questa guida, è fondamentale **aumentare la dimensione della Partizione EFI** nello script DISKPART utilizzato dall'`autounattend.xml`.
+
+Si raccomanda di utilizzare un minimo di **300 MB** (o 500 MB) per garantire compatibilità future e spazio sufficiente per il boot loader di Windows e potenziali file di ripristino o di terze parti.
+
+#### 🛠️ Modifica dello Script DISKPART in `autounattend.xml`
+
+All'interno della sezione `oobeSystem` o `windowsPE` del tuo `autounattend.xml`, modifica il comando `CreatePartition` relativo alla partizione EFI, cambiando il parametro `Size` da `100` al valore raccomandato:
+
+**Vecchia Configurazione (Soggetta a Errore):**
+
+```xml
+<CreatePartition wcm:action="add">
+    <Order>1</Order>
+    <Type>EFI</Type>
+    <Size>100</Size> </CreatePartition>
+```
+
+**Nuova Configurazione Raccomandata:**
+
+```xml
+<CreatePartition wcm:action="add">
+    <Order>1</Order>
+    <Type>EFI</Type>
+    <Size>300</Size> </CreatePartition>
+```
+
+**Nota:** Assicurati di mantenere la corretta sequenza di creazione delle partizioni: `EFI` (Partizione di Sistema) $\to$ `MSR` (Partizione Riservata Microsoft) $\to$ `PRIMARY` (Partizione di Windows C:).
 ---
 
 ### ⚙️ **Step 2.2 - Integrazione e Creazione dell'Immagine ISO Personalizzata**
@@ -478,7 +516,7 @@ cleanmgr.exe /sagerun:1
 ## 🏷️ **Metadata Documento**
 
 **📄 Versione:** 2.1 Professional  
-**📅 Ultimo Aggiornamento:** Gennaio 2025  
+**📅 Ultimo Aggiornamento:** Ottobre 2025  
 **✍️ Autore:** Guida Tecnica Avanzata  
 **🎯 Target:** IT Professionals, System Administrators, Enthusiasts  
 **🔖 Keyword:** Windows Deployment, Unattend XML, Microsoft ADK, Enterprise Setup  

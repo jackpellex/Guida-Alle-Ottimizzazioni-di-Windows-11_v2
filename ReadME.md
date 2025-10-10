@@ -189,6 +189,9 @@ In questa sezione troverai strumenti e procedure per individuare e correggere pr
   2. Modifica permessi su `C:\Windows\Temp` e `C:\Temp`.  
   3. Avvia l’installazione con privilegi elevati (`.msi` da prompt).
 
+#### ⚠️ Errore EFI Insufficiente (0xc1900200 / 0xc1900201)
+La risoluzione degli errori **0xc1900200** e **0xc1900201** si concentra sul superamento del blocco degli aggiornamenti di Windows 11 (come la versione 24H2) causato da **spazio insufficiente** nella **Partizione di Sistema EFI (ESP)**. Per risolvere, si possono applicare tre metodologie progressive: pulizia dei file obsoleti, ridimensionamento non distruttivo o, come ultima risorsa, la ricreazione totale dell'ESP per aumentarne la dimensione.
+
 #### 🧱 Driver Grafici
 
 - Usa **DDU (Display Driver Uninstaller)** in modalità provvisoria per rimuovere completamente i driver.  
